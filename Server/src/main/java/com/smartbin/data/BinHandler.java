@@ -19,7 +19,7 @@ public class BinHandler {
 	MongoDBService dbS = ServiceMgmt.getDbService();
 	static String COLLECTION_BIN="BinStore";
 	static String COLLECTION_BIN_HISTORY="BinHistory";
-	public Bin createBin(Map map)
+	public Bin createBin(Map<String, Object> map)
 	{
 		Bin bin = new Bin();
 		bin.setBinId((Integer)map.get("binId"));
@@ -165,16 +165,20 @@ public class BinHandler {
 	
 	public ArrayList<Bin> getAllBins()
 	{
+		//System.out.println("Inside getAllBins");
 		ArrayList<Bin> resultList = new ArrayList<Bin>();
 		MongoCollection<Document> coll = dbS.fetchCollection(COLLECTION_BIN);
 		if(coll != null)
 		{
+			//System.out.println("Collection fetch successful->" + COLLECTION_BIN);
 			FindIterable<Document> itr = coll.find();
 			MongoCursor<Document> cursor = itr.iterator();
 			while(cursor.hasNext())
 			{
 				Document cur = cursor.next();
+				//System.out.println("==========Printing the document===========\n" + cur.toString());
 				resultList.add(createBin(cur));
+				//System.out.println("Bin added to resultList");
 			}
 		}
 

@@ -1,6 +1,5 @@
 package com.smartbin.reports;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -32,7 +31,7 @@ public class JasperReportGenerator {
 		JasperPrint jprint = null;
 		
 		//Step 1: Get the jrxml file
-		String jrxmlFileName = "C:\\report_jrxmls\\fillTrend_jrxml.jrxml";
+		String jrxmlFileName = "report_jrxmls\\fillTrend_jrxml.jrxml";
 		
 		//Step2: Compile the report
 		String jasperFileName =  "fillTrend.jasper";

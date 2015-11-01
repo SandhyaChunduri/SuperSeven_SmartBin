@@ -91,7 +91,6 @@ public class Bin {
 
 	public void convertLatLongToLocation(String latLong)
 	{
-		String location = null;
 		InputStream in = null;
 		try {
 			//	URL url = new URL(GEOCODE_URL + "?latlng="

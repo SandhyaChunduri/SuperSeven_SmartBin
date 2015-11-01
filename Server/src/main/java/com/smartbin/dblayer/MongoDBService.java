@@ -1,9 +1,6 @@
 package com.smartbin.dblayer;
 
 import org.bson.Document;
-import org.bson.conversions.Bson;
-
-import com.mongodb.DB;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
