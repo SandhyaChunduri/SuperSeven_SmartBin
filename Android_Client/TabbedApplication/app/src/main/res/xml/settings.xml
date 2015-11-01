@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/menu_settings_title" >
+
+    <ListPreference
+        android:key="prefRadius"
+        android:entries="@array/radiusValues"
+        android:summary="@string/pref_radius_summary"
+        android:entryValues="@array/radiusValues"
+        android:defaultValue="@string/radius_default_value"
+        android:title="@string/pref_radius" />
+
+        <EditTextPreference
+            android:title="@string/pref_baseURL"
+            android:summary="@string/pref_baseURL_summary"
+            android:defaultValue="@string/baseURL_default_value"
+            android:key="prefBaseURL"/>
+
+        <EditTextPreference
+            android:title="@string/pref_export_email"
+            android:summary="@string/pref_export_email_summary"
+            android:hint="@string/pref_export_email_hint"
+            android:defaultValue="@string/admin_email_address"
+            android:key="prefExportEmail"/>
+
+        <ListPreference
+            android:key="prefExportFormat"
+            android:entries="@array/exportFormatValues"
+            android:summary="@string/pref_export_format_summary"
+            android:entryValues="@array/exportFormatValues"
+            android:defaultValue="@string/export_format_default"
+            android:title="@string/pref_export_format" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exportFormatValues">
+        <item name="PDF">PDF</item>
+    </string-array>
+    <string-array name="radiusNames">
+        <item name="KM_10">"10"</item>
+        <item name="KM_20">"20"</item>
+        <item name="KM_30">"30"</item>
+        <item name="KM_40">"40"</item>
+    </string-array>
+    <string-array name="radiusValues">
+        <item name="KM_10">"10"</item>
+        <item name="KM_20">"20"</item>
+        <item name="KM_30">"30"</item>
+        <item name="KM_40">"40"</item>
+    </string-array>
+
+</resources>

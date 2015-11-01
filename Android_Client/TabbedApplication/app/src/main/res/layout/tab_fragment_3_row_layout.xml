@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:id="@+id/list_item" >
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/checkBox1"
+        android:text="@+id/location">
+    </TextView>
+
+    <TextView
+        android:id="@+id/BinId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/location"
+        android:text="@+id/BinId"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/FillLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        >
+    </TextView>
+
+</RelativeLayout>
